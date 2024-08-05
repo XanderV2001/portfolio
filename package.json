@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "appwrite": "^15.0.0",
-    "vue": "^3.4.26",
+    "vue": "^3.4.35",
     "vue-router": "^4.2.5"
   },
   "devDependencies": {
