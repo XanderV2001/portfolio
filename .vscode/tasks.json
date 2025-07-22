@@ -1,10 +1,16 @@
 {
   // For more information, visit: https://go.microsoft.com/fwlink/?LinkId=733558
   "version": "2.0.0",
+  "options": {
+    "env": {
+      "PATH": "/home/xander/.bun/bin:/home/xander/.bun/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin:/home/xander/.dotnet/tools:/home/xander/.cargo/bin/:/home/xander/.spicetify:/home/xander/.cargo/bin/:/home/xander/.spicetify:/home/xander/.cargo/bin/:/home/xander/.spicetify"
+    }
+  },
   "tasks": [
     {
-      "type": "npm",
-      "script": "start",
+      "label": "bun: start",
+      "type": "shell",
+      "command": "bun run start",
       "isBackground": true,
       "problemMatcher": {
         "owner": "typescript",
@@ -21,8 +27,9 @@
       }
     },
     {
-      "type": "npm",
-      "script": "test",
+      "label": "bun: test",
+      "type": "shell",
+      "command": "bun run test",
       "isBackground": true,
       "problemMatcher": {
         "owner": "typescript",
